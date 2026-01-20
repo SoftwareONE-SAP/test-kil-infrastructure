@@ -1,0 +1,30 @@
+# Example Terraform Variables File
+# Copy this file to terraform.tfvars and update with your values
+# NEVER commit terraform.tfvars to version control
+
+# Azure Region
+location = "westeurope"
+
+# Environment
+environment = "prod"
+
+# SAP System ID (3 characters)
+sap_sid = "S4H"
+
+# Cost Centre for billing and tagging
+cost_centre = "CC-SAP-001"
+
+# VM Administrator Credentials
+# SECURITY: Retrieve these from Azure Key Vault in production
+admin_username = "azureadmin"
+admin_password = "<RETRIEVE_FROM_KEY_VAULT>"
+
+# SSH Public Key for Linux VMs
+# Generate with: ssh-keygen -t rsa -b 4096 -C "sap-prod-key"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD... your-email@example.com"
+
+# Backup Configuration
+enable_backup = true
+
+# Accelerated Networking (Required for SAP production)
+enable_accelerated_networking = true
