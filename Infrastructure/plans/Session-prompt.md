@@ -107,6 +107,8 @@ Step 3 - GENERATE MODULES OR UPDATE MODULES AS NEEDED:
     If you cannot follow these rules, STOP and explain why before generating code.
 
 Step 4 – GENERATE ENVIRONMENT CODE (after modules are present and validated):
+- Analyse the available modules, their inputs and outputs, and the requirements document to determine which modules are needed and how they should be wired together.
+- Plan the inputs for each module which will meet the requirements exactly
 - Generate files ONE BY ONE in this exact order:
   1. versions.tf
   2. variables.tf
@@ -122,6 +124,7 @@ Step 4 – GENERATE ENVIRONMENT CODE (after modules are present and validated):
 - Output the FULL CONTENT of each file.
 - Do NOT skip files even if they appear trivial.
 - Do NOT stop early; continue until all files are generated.
+- Run a final self-check before completing the task that the generated code is valid and will deploy successfully with all the resources defined and present.
 
 
 === SELF‑CHECK BEFORE FINAL ANSWER ===

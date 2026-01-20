@@ -133,7 +133,8 @@ Virtual Machines:
 1x Jump Host (vm-jumphost)
 1x App Servers (vm-s4app-01)
 1x HANA DB (vm-hana-01)
+No proximity placement groups needed
 Storage: Managed Disks (Prem v2 for HANA), RSV for Backup.
 Security: NSGs attached to subnets; Route Table attached to Spoke subnets.
-Would you like me to generate the Terraform or Bicep code to deploy this infrastructure automatically?
+
  
